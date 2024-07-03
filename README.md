@@ -3,6 +3,7 @@
 ## Setup
 1. Create a virtual environment and activate it
 2. `pip install -r requirements.txt`
+3. Install [gcloud CLI](https://cloud.google.com/sdk/docs/install) and set your application default credentials using gcloud auth application-default login. 
 
 ## Usage
 
@@ -12,9 +13,8 @@
 3. A file called `bills.json` will be created.
 
 ### Create table
-1. Install (gcloud CLI)[https://cloud.google.com/sdk/docs/install] and set your application default credentials using gcloud auth application-default login. 
-2. `python create_bills_table.py`
-3. A table called `bills` with the appropriate schema should be created in bigquery
+1. `python create_bills_table.py`
+1. A table called `bills` with the appropriate schema should be created in bigquery
 
 ### Load data
 1. `python load_to_bigquery.py`
